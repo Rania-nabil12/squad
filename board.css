@@ -300,7 +300,7 @@ header::before{
     .content .lest .sec::before{
         content: "";
         background-color: cadetblue;
-        width: 56%;
+        width: 45%;
         height: 4px;
         position: absolute;
         margin: 87px 0px 0px 103px;
@@ -309,7 +309,7 @@ header::before{
     .content .first:after{
         content: "";
         background-color: cadetblue;
-        width: 5px;
+        width: 3px;
         height: 299px;
         position: absolute;
         margin: 27px 0px 0px 60px;
@@ -329,7 +329,7 @@ header::before{
     }
 
     .content .sub {
-        margin: -21px auto;
+        margin: -19px -6px;
         
     }
     .content .lest .bs::before{
