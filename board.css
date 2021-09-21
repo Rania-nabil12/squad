@@ -1,0 +1,198 @@
+body{  
+    background-color: cadetblue;
+}
+
+
+header .follow-us{
+    float: left;
+    width: 20%;
+}
+
+
+
+header .follow-us p{
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-top: 0;
+}
+
+header .follow-us .photo img{
+    width: 33px;
+    margin: 0px 6px 0px 5px;
+}
+
+header .logo{
+    width: 20%;
+    float: left;
+    text-align: end;
+}   
+
+header .logo img{
+    width: 50px;
+    
+}
+header .links{
+    text-align:right;
+    
+}
+
+header ul.pages {
+    text-align: right;
+    list-style: none;
+}
+
+
+header ul.pages li{
+    margin: 1px;
+    font-weight: bolder;
+    font-size: 19px;
+    color: white;
+    height: 66px;
+    text-align: center;
+    width: 82px;
+    display: inline-block;
+}  
+header ul.pages li a{
+    text-decoration: none;
+    color: white;
+}
+
+header ul.pages li a:hover{
+    color: gray;
+}
+
+header:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;   
+}
+
+
+.content:before{
+    content: '';
+    width: 5px;
+    height: 289px;
+    position: absolute;
+    background: cadetblue;
+    left: 50%;
+}
+
+.content {
+    position: relative;
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    margin: 89px 0 0 0;
+    border-radius: 33px;
+}
+
+.content .year{
+    margin: 0px auto;
+    width: 61px;
+    position: relative;
+    background: cadetblue;;
+    color: white;
+    text-align: center;
+    border-radius: 27px;
+}
+
+
+.content .person-info{
+    margin: 42px auto;
+    width: 230px;
+    background-color: cadetblue;;
+    position: relative;
+    border-radius: 26px;
+    height: 116px;
+}
+
+.content .person-info img,
+.content .lest .person img,
+.content .sub .person img{
+    /* width: 92px;
+    border-radius: 26px 0 57px 0;
+    float: left; */
+
+    width: 92px;
+    border-radius: 26px 0 57px 0;
+    float: left;
+    position: relative;
+}
+
+.content .person-info a,
+.content .lest .person a,
+.content .sub .person a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.content .person-info a h3,
+.content .lest .person a h3,
+.content .sub .person a h3{
+    padding: 20px 0 0 0;
+}
+.content .person-info  h4,
+.content .lest .person h4,
+.content .sub .person h4 {
+    margin: -16px 0 0;
+    font-weight: bold;
+    color: white;
+    font-family: emoji;
+}
+
+
+.content .lest{
+    margin: auto;
+    width: 100%;
+}
+
+.content .lest:before{
+    content: '';
+    background-color: cadetblue;;
+    width:1100px;
+    height: 5px;
+    position: absolute;
+    margin: 68px;
+}
+
+.content .lest .person,
+.content .sub .person{
+    margin: 22px 46px;
+    width: calc(70%/4);
+    background-color: cadetblue;;
+    position: relative;
+    border-radius: 26px;
+    height: 116px;
+    display: inline-block;
+}
+.content .lest .bs:after{
+    content: '';
+    background-color: cadetblue;;
+    width: 127px;
+    height: 5px;
+    position: absolute;
+    margin: 58px -82px
+
+}
+
+.content .lest .bs:before{
+    content: "";
+    background-color: cadetblue;;
+    width: 5px;
+    height: 127px;
+    position: absolute;
+    margin: 17px -16px;
+}
+.content .sub .person{
+    margin: 22px 6px 0px 36px;
+    width: calc(23%);
+}    
+.content .sub{
+    margin: -30px 0 0 100px;
+}
+
+
+
