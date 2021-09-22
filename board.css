@@ -329,7 +329,7 @@ header::before{
     }
 
     .content .sub {
-        margin: -19px -6px;
+        margin: -19px 9px;
         
     }
     .content .lest .bs::before{
