@@ -317,7 +317,7 @@ header::before{
 
     .content{
         height: 740px;
-        width: 100%;
+        width: 90%;
     }
     .content .lest .bs:after {
         content: '';
