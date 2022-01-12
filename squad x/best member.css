@@ -1,0 +1,361 @@
+body {
+  background-color: cadetblue;
+}
+header {
+  height: 100px;
+  display: flex;
+}
+
+header .follow-us {
+  width: 25%;
+}
+
+header .follow-us p {
+  color: white;
+  font-weight: bolder;
+  font-size: 17px;
+  margin-top: 0;
+}
+
+header .follow-us .photo img {
+  width: 33px;
+  margin: 0px 6px 0px 5px;
+}
+
+header .logo {
+  width: 20%;
+  text-align: center;
+  margin: 2px 4px 1px 4px;
+}
+
+header .logo img {
+  width: 50px;
+}
+header .links {
+  width: 55%;
+}
+
+header ul.pages {
+  text-align: right;
+  list-style: none;
+}
+
+header ul.pages li {
+  margin: 1px;
+  font-weight: bolder;
+  font-size: 19px;
+  color: white;
+  height: 66px;
+  text-align: center;
+  width: 82px;
+  display: inline-block;
+}
+header ul.pages li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .links .toggle-menu {
+  background: none;
+  border: none;
+  width: 40px;
+  cursor: pointer;
+  margin-top: 19px;
+  display: none;
+  position: relative;
+}
+
+header .links .toggle-menu span {
+  display: block;
+  background-color: #fff;
+  height: 4px;
+  margin-bottom: 4px;
+}
+
+header ul.pages li a:hover {
+  color: gray;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  margin: 82px 0 0 -8px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  margin: 60px auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.card .front {
+  z-index: 2;
+  backface-visibility: hidden;
+  background-image: url(photo/opened-surprise-gift-box_3446-340.jpg);
+  background-size: cover;
+  margin: 60px auto;
+  width: 293px;
+  height: 301px;
+  border-radius: 70px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+
+.back:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #3b4a4a;
+  margin: 73px 0px 0px 139px;
+}
+
+.best-member {
+  background-color: #f9f9f9;
+  height: 454px;
+  width: 82%;
+  border-radius: 70px;
+  margin: 0 auto;
+}
+
+.best-member .month {
+  background-color: cadetblue;
+  width: 48px;
+  text-align: center;
+  border-radius: 204px;
+  height: 44px;
+  color: white;
+  padding: 11px 6px 8px 8px;
+  position: absolute;
+  left: 113px;
+  top: 198px;
+}
+
+.best-member .member {
+  float: left;
+  width: calc(100% / 4);
+  margin: 24px -28px 0px 71px;
+}
+
+.best-member .member .team {
+  background: cadetblue;
+  color: white;
+  width: 70px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0px 0px -22px 71px;
+}
+
+.best-member .member .person {
+  margin: 42px auto;
+  width: 170px;
+  background-color: cadetblue;
+  position: relative;
+  border-radius: 26px;
+  height: 116px;
+}
+
+.best-member .member .person img {
+  width: 92px;
+  border-radius: 0 0 100px 0;
+  float: left;
+}
+
+.best-member .member .person a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.best-member .member .person a h3 {
+  margin: 7px 4px 19px 50px;
+}
+
+.best-member .member .person .best {
+  margin: 0px 0 0 87px;
+  border-radius: 0;
+  width: 51px;
+  height: 67px;
+}
+
+@media (max-width: 730px) {
+  header .follow-us {
+    width: 30%;
+  }
+
+  header .follow-us .photo img {
+    width: 22px;
+    margin: -22px 6px 0px -4px;
+  }
+
+  header .logo {
+    width: 50%;
+  }
+
+  header .links {
+    width: 20%;
+  }
+
+  header .links .pages {
+    display: none;
+  }
+
+  header .links .toggle-menu {
+    display: inline-block;
+    float: right;
+  }
+
+  header .links .toggle-menu.menu-active::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 10px;
+  }
+
+  header .links .toggle-menu:focus {
+    outline: none;
+  }
+
+  header .pages.open {
+    background-color: white;
+    width: 23%;
+    border-radius: 4px;
+    position: absolute;
+    display: block;
+    right: 7px;
+    top: 41px;
+    padding: 10px;
+    align-content: center;
+  }
+
+  header .pages.open li {
+    display: block;
+    margin: 10px;
+    text-align: left;
+    height: 15px;
+  }
+
+  header .pages.open li a {
+    color: aqua;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 829px) {
+  .best-member .member {
+    float: left;
+    width: calc(100% / 4);
+    margin: 6px 0px 0px 97px;
+  }
+
+  .best-member .member .person {
+    width: 114px;
+  }
+
+  .best-member {
+    height: 593px;
+    width: 76%;
+    margin: auto;
+  }
+
+  .best-member .member .team {
+    margin: 0px 0px -22px 18px;
+  }
+
+  .back:before {
+    margin: 142px 0px 0 123px;
+  }
+
+  .best-member .month {
+    margin: 42px 0 0 -20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .best-member .member {
+    float: left;
+    width: calc(90% / 4);
+    margin: 6px 0px 0px 84px;
+  }
+
+  .best-member {
+    height: 565px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .best-member .member .person {
+    width: 110px;
+    margin: 52px -29px auto;
+  }
+
+  .best-member .month {
+    margin: 45px 0 0 -75px;
+  }
+
+  .back:before {
+    margin: 122px 0 0 66px;
+  }
+
+  .best-member .member .person a h3 {
+    margin: 0px 47px;
+  }
+
+  .best-member .member .team {
+    margin: 14px 0px -31px -7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .best-member {
+    width: 98%;
+  }
+  .best-member .month {
+    margin: 83px 0 0 -112px;
+  }
+
+  .back:before {
+    margin: 34px 0px 0 26px;
+    height: 447px;
+  }
+
+  .card .front {
+    width: 293px;
+    height: 301px;
+  }
+
+  .best-member .member .person {
+    width: 111px;
+    margin: 42px -8px auto;
+  }
+
+  .best-member .member .team {
+    margin: 22px 0px -32px 14px;
+  }
+
+  .best-member .member {
+    margin: 15px 0px 0px 69px;
+  }
+}
